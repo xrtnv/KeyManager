@@ -26,5 +26,5 @@ db = client.secrets_db
 
 
 @asynccontextmanager
-async def lifespan(app: FastAPI):
+async def lifespan(application: FastAPI):
     await db.secrets.create_index("expires_at", expireAfterSeconds=0)

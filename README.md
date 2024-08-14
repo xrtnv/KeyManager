@@ -14,8 +14,8 @@ API сервис для создания и получения одноразо�
 
 2. Создайте файл `.env` и добавьте необходимые переменные окружения:
     ```env
-    SECRET_KEY=<your_secret_key>
-    ALGORITHM=HS256
+    JWT_SECRET_KEY=<your_secret_key>
+    JWT_ALGORITHM=HS256
     ACCESS_TOKEN_EXPIRE_MINUTES=30
     MONGODB_URL=mongodb://mongo:27017
     ```
